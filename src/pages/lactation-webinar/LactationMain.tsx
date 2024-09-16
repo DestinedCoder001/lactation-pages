@@ -8,7 +8,7 @@ import {
   LactationWebinarTopicsData,
   LactationWebinarButtonData,
   FeatureItem,
-} from './lactationData';
+} from '../../components/lactationData';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Logo from '../../components/atoms/Logo';
