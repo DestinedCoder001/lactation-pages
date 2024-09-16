@@ -2,7 +2,6 @@ import React from 'react';
 import TestimonialCard from './TestimonialCard';
 import Slider from 'react-slick';
 import { LactationTestimonialCardprops } from '../../shared/types';
-import '../../assets/styles/carousel.css';
 import dynamic from 'next/dynamic';
 const HeaderAnimationWrapper = dynamic(() => import('../../components/common/HeaderAnimationWrapper'), {
   ssr: false,

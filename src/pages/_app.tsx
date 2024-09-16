@@ -2,6 +2,8 @@ import "@/styles/globals.css";
 import "../assets/styles/carousel.css";
 import "../components/widgets/Sidebar.css";
 import "../components/widgets/Weaning.css";
+import '../assets/styles/loader.css';
+
 
 import type { AppProps } from "next/app";
 import RecoilContextProvider from "@/components/common/RecoilContextProvider";

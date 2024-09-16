@@ -1,5 +1,4 @@
 'use client';
-import '../../assets/styles/loader.css';
 export default function Loader() {
   return (
     <>

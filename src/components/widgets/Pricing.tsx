@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import 'react-phone-input-2/lib/style.css';
-import PlanItem from './PlanItem';
+// import PlanItem from './PlanItem';
 import { UpdatedPlan } from '../../shared/types';
 import { useRecoilState } from 'recoil';
 import { planDurationAtom } from '../../components/state/atoms/planDurationAtom';
@@ -19,7 +19,7 @@ const Pricing: React.FC<{ plans: UpdatedPlan[] }> = ({ plans }) => {
   }, [setPlanDuration]);
 
   const handleDurationToggle = () => {
-    setPlanDuration((prevDuration) => (prevDuration === 'monthly' ? 'threeMonthly' : 'monthly'));
+    setPlanDuration((prevDuration : string) => (prevDuration === 'monthly' ? 'threeMonthly' : 'monthly'));
   };
 
   return (
@@ -61,11 +61,11 @@ const Pricing: React.FC<{ plans: UpdatedPlan[] }> = ({ plans }) => {
           </label>
         </div>
 
-        <div className="z-10 mx-auto grid grid-cols-1 gap-3 bg-transparent px-6 pt-2 md:grid-cols-2 lg:gap-6">
+        {/* <div className="z-10 mx-auto grid grid-cols-1 gap-3 bg-transparent px-6 pt-2 md:grid-cols-2 lg:gap-6">
           {plans.map((plan) => (
             <PlanItem key={plan.id} plan={plan} />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,13 +1,13 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import 'react-phone-input-2/lib/style.css';
-import PlanItem from './PlanItem';
+// import PlanItem from '../';
 import { ComparisonPlan, Plan } from '../../shared/types';
 import ComparisonTable from './ComaprisonTable';
 import { ComparisonPlans, ComparisonPlansBabyCare } from '../../shared/data';
 import { TiTick } from 'react-icons/ti';
 import { RxCross2 } from 'react-icons/rx';
-import '../../assets/styles/Ribbon.css';
+// import '../../assets/styles/Ribbon.css';
 import { usePathname } from 'next/navigation';
 
 interface ComparisonTableProps {

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import UtmHeading from '../../components/widgets/UtmHeading';
 import Card from '../../components/widgets/Card';
 import NavigationStepper from '../../components/widgets/NavigationStepper';
-import SoloPlanPurchaser from '../../components/widgets/SoloPlanPurchaser';
+// import SoloPlanPurchaser from '../../components/widgets/SoloPlanPurchaser';
 import { useRecoilState } from 'recoil';
 import { planDurationAtom } from '../../components/state/atoms/planDurationAtom';
 
@@ -116,7 +116,7 @@ const SoloCarePlanHero: React.FC<SoloCarePlanHeroProps> = ({
               )}
             </div>
 
-            <SoloPlanPurchaser plan={plan} />
+            {/* <SoloPlanPurchaser plan={plan} /> */}
 
             <div className="pt-6">
               <h3 className="text-start text-lg font-medium md:text-xl">{plan.name} Plan includes:</h3>
