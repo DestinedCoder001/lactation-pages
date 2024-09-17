@@ -19,7 +19,6 @@ import playBtn from '../../assets/images/breastfeeding-webinar/Button.svg';
 const HeroLactationWebinar: React.FC<WeaningHeroProps> = ({ weaningHeroData }) => {
   const router = useRouter();
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useRecoilState(isPaymentModalOpenState);
-  const { titlePart1, subtitle, paymentButton, image } = weaningHeroData;
   const [isDisabled, setIsDisabled] = useState(false);
   const [formApiValues, setFormApiValues] = useState<LactationWebinarFormApiData>(LactationFormApiData);
   const [mobile, setMobile] = useState('');
