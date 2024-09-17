@@ -56,7 +56,7 @@ const LactationQuotes: React.FC<LactationQuotesProps> = ({ header, quotes }) => 
         <div className="flex flex-col items-stretch justify-center">
           <div className="h-full w-full md:mx-4 md:pt-8" ref={ref}>
             <Slider {...settings}>
-              {quotes.map(({ name, quotes }, index) => (
+              {quotes?.map(({ name, quotes }, index) => (
                 <div
                   key={`item-quotes-${index}`}
                   className=" relative h-[300px] rounded-lg border-2 border-dashed border-gray-800 bg-pink-100 pt-6 text-white"

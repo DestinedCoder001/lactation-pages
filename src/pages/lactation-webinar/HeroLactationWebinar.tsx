@@ -269,26 +269,26 @@ const HeroLactationWebinar: React.FC<WeaningHeroProps> = ({ weaningHeroData }) =
       <div className="mx-auto max-w-7xl px-4 pt-2 sm:px-6 md:pt-12">
         <div className="grid grid-cols-1 items-center gap-2 md:grid-cols-2 md:gap-8">
           <div className="mx-auto max-w-4xl pb-4 text-center md:pb-8 md:text-left">
-            {titlePart1 && (
+            {weaningHeroData?.titlePart1 && (
               <div>
                 <h1 className="font-heading leading-tighter mb-4 text-4xl font-bold tracking-normal md:mb-8">
-                  {headingContent !== null ? headingContent : titlePart1}
+                  {headingContent !== null ? headingContent : weaningHeroData?.titlePart1}
                 </h1>
               </div>
             )}
             <div className="mx-auto max-w-3xl">
-              {subtitle && (
+              {weaningHeroData?.subtitle && (
                 <p className="mb-4 text-lg font-medium text-gray-600 dark:text-slate-400 sm:text-xl md:mb-8 md:text-2xl">
-                  {subHeading !== null ? subHeading : subtitle}
+                  {subHeading !== null ? subHeading : weaningHeroData?.subtitle}
                 </p>
               )}
               <div className="flex flex-wrap items-center justify-center gap-4 md:justify-start">
-                {paymentButton && (
+                {weaningHeroData?.paymentButton && (
                   <button
                     className="w-full rounded-[2rem] bg-[#293BDB] py-4 text-[1.2rem] tracking-wide text-white md:block"
                     onClick={() => setIsPaymentModalOpen(true)}
                   >
-                    {paymentButton}
+                    {weaningHeroData?.paymentButton}
                   </button>
                 )}
               </div>
@@ -325,8 +325,8 @@ const HeroLactationWebinar: React.FC<WeaningHeroProps> = ({ weaningHeroData }) =
               )
             ) : (
               <div className="relative shrink-0">
-                {image && (
-                  <Image src={image.src} alt={image.alt} className="w-full" priority={true} width={800} height={800} />
+                {weaningHeroData?.image && (
+                  <Image src={weaningHeroData?.image.src} alt={weaningHeroData?.image.alt} className="w-full" priority={true} width={800} height={800} />
                 )}
                 <button
                   title="Click to play video"
